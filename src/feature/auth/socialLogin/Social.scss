@@ -1,0 +1,51 @@
+.social-login-div {
+  .social-btn {
+    border: none;
+    width: 70%;
+    margin: 1% 0 2% 9%;
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+    color: #ffffff;
+    cursor: pointer;
+  }
+
+  .social-btn:hover {
+    font-size: 15px;
+    cursor: pointer;
+  }
+  .btn-google {
+    background: #d9483b;
+  }
+  .btn-twitter {
+    background: #3dadf2;
+  }
+  .btn-facebook {
+    background: #355b8c;
+  }
+  .icon {
+    height: 16px;
+    margin-right: 5px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .social-login-div {
+    .social-btn {
+      width: 95%;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .social-login-div {
+    width: 94%;
+    margin: auto;
+
+    .social-btn {
+      width: 90%;
+      margin: 0.5% 0 2% 5%;
+      font-size: 13px;
+    }
+  }
+}

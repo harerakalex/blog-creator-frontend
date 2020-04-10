@@ -1,0 +1,16 @@
+.commentCount-box {
+  margin: 0 0 0 1em;
+  float: left;
+}
+.comment {
+  color: black;
+  &_box {
+    display: inline-flex;
+    height: 30px;
+    justify-content: space-between;
+    width: fit-content;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

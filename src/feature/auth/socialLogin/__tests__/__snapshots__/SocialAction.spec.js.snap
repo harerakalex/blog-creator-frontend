@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should create an action Should return error upon invalid login 1`] = `
+Array [
+  Object {
+    "error": [InvalidTokenError: Invalid token specified: Cannot read property 'replace' of undefined],
+    "type": "LOGIN_FAIL",
+  },
+]
+`;
+
+exports[`Should create an action Should test LOGIN_FAIL type 1`] = `
+Array [
+  Object {
+    "error": "something went wrong",
+    "type": "LOGIN_FAIL",
+  },
+]
+`;
+
+exports[`Should create an action Should test LOGIN_SUCCESS type 1`] = `
+Array [
+  Object {
+    "type": "LOGIN_SUCCESS",
+    "user": Object {
+      "email": "eric.malaba6@gmail.com",
+      "exp": 1571291562,
+      "iat": 1571205162,
+      "id": 2,
+      "role": "user",
+      "username": "Eric6",
+    },
+  },
+]
+`;

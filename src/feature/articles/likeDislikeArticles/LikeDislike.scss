@@ -1,0 +1,32 @@
+.likeDislike-box {
+  display: flex;
+  width: 100px;
+  height: 20px;
+  margin: 0 auto;
+}
+.likes,
+.dislikes {
+  color: black;
+  display: flex;
+  height: 30px;
+  justify-content: space-between;
+  width: 5px;
+  &:hover {
+    cursor: pointer;
+  }
+  &__count {
+    margin: 4px 10px 0 10px;
+  }
+}
+.likes {
+  margin-right: 10px;
+  &:focus {
+    background: blue;
+  }
+}
+.dislikes {
+  margin-left: 2em;
+}
+.fa {
+  margin-top: 7px;
+}

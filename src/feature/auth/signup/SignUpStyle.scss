@@ -1,0 +1,112 @@
+.signup-main-wraper {
+  width: 60%;
+  margin: auto;
+
+  &__heading {
+    text-align: center;
+
+    .sign-in-link {
+      text-decoration: none;
+      color: #599bda;
+    }
+  }
+
+  .signup-main-container {
+    display: flex;
+    margin-top: 40px;
+
+    &__form-body {
+      width: 55%;
+      border-right: #000000 solid;
+
+      .form-container {
+        width: 90%;
+        margin: auto;
+
+        .form-group {
+          width: 100%;
+          height: 60px;
+          margin-top: 10px;
+        }
+
+        .form-input {
+          width: 96%;
+          padding: 8px;
+          font-size: 15px;
+          border: none;
+          outline: none;
+          border-bottom: solid #e5e5e5;
+        }
+
+        .form-input::placeholder {
+          color: #000000;
+          letter-spacing: 1px;
+        }
+
+        .signup-btn {
+          margin: 3% 0 0 0;
+          padding: 9px;
+          color: #599bda;
+          border: 1px solid #599bda;
+          border-radius: 15px;
+          outline: none;
+          font-size: 15px;
+          width: 120px;
+          padding: 5px 30px;
+          background: #ffffff;
+          cursor: pointer;
+        }
+        .signup-btn:hover {
+          color: #ffffff;
+          border-color: #ffffff;
+          background: #599bda;
+          cursor: pointer;
+        }
+      }
+    }
+
+    &__social-container {
+      width: 45%;
+      padding-top: 10px;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .signup-main-wraper {
+    width: 90%;
+  }
+}
+
+@media (max-width: 700px) {
+  .signup-main-wraper {
+    width: 90%;
+    margin: auto;
+
+    &__heading {
+      text-align: center;
+    }
+
+    .signup-main-container {
+      flex-wrap: wrap;
+      margin-top: 30px;
+      width: 100%;
+
+      &__form-body {
+        width: 100%;
+        border-right: none;
+
+        .form-container {
+          .form-group {
+            margin: 10px 0px;
+          }
+        }
+      }
+
+      &__social-container {
+        width: 100%;
+        padding-top: 20px;
+      }
+    }
+  }
+}

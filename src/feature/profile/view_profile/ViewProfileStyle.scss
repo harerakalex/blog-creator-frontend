@@ -1,0 +1,241 @@
+.title {
+  margin-bottom: 3%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+}
+
+.grid-container {
+  &__cover {
+    margin: 0 0 5% 15%;
+    background: url(../img/sea.jpeg) no-repeat top;
+    background-size: cover;
+    width: 70%;
+    height: 140px;
+  }
+
+  &__avatar {
+    background-size: cover;
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    border-radius: 50%;
+    margin-top: 4%;
+    margin-left: 30%;
+    border: solid 3px #555658;
+  }
+
+  &__profile-info {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  &__loading {
+    text-align: center;
+    margin-top: 20%;
+    font-size: 1.8rem;
+  }
+
+  &__username {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  &__btn {
+    color: #599bda;
+    border-color: #599bda;
+    margin-left: 45.6%;
+    border-radius: 15px;
+    font-size: 16px;
+    width: 8%;
+    padding: 8px;
+    cursor: pointer;
+  }
+
+  &__bio {
+    max-width: 70%;
+    margin-left: 15%;
+  }
+}
+
+/* 
+  ##Devices = Tablets, Ipad Pro (portrait)
+  ##Screen = B/w 901px to 1024px
+*/
+
+@media (min-width: 901px) and (max-width: 1024px) {
+  .grid-container {
+    &__cover {
+      height: 120px;
+      margin-bottom: 8%;
+    }
+
+    &__avatar {
+      margin: 5% 0 0 29%;
+      width: 115px;
+      height: 115px;
+    }
+
+    &__avatar-not-found {
+      margin: 5% 0 0 29%;
+      width: 115px;
+      height: 115px;
+    }
+
+    &__btn {
+      margin-left: 43%;
+      width: 11%;
+    }
+  }
+}
+
+/* 
+  ##Devices = Tablets, Nexus 10, Ipad Mini (portrait)
+  ##Screen = B/w 768px to 900px
+*/
+
+@media (min-width: 768px) and (max-width: 900px) {
+  .grid-container {
+    &__cover {
+      height: 112px;
+      margin-bottom: 8%;
+      width: 80%;
+      margin-left: 10%;
+    }
+
+    &__avatar {
+      margin: 6% 0 0 32%;
+      width: 115px;
+      height: 115px;
+    }
+
+    &__avatar-not-found {
+      margin: 6% 0 0 32%;
+      width: 115px;
+      height: 115px;
+    }
+
+    &__btn {
+      margin-left: 43%;
+      width: 13%;
+    }
+  }
+}
+
+/* 
+  ##Devices = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 400px to 480px
+*/
+
+@media (min-width: 400px) and (max-width: 480px) {
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .grid-container {
+    margin-bottom: 25%;
+
+    &__cover {
+      margin: 0 0 13% 10%;
+      background-size: cover;
+      height: 80px;
+      width: 80%;
+    }
+
+    &__avatar {
+      width: 90px;
+      height: 90px;
+      margin-top: 8%;
+      margin-left: 28%;
+    }
+
+    &__avatar-not-found {
+      width: 90px;
+      height: 90px;
+      margin-top: 8%;
+      margin-left: 28%;
+    }
+
+    &__bio {
+      padding: 0 5px 0 5px;
+      font-size: 14px;
+    }
+
+    &__btn {
+      margin-left: 37%;
+      padding: 5px 12px 5px 12px;
+      font-size: 12px;
+      width: 21%;
+    }
+
+    &__profile-info {
+      margin-bottom: 3rem;
+    }
+
+    &__username {
+      font-size: 1.1rem;
+    }
+  }
+}
+
+/* 
+  ##Device = Most of the Smallest Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 399px
+*/
+
+@media (min-width: 320px) and (max-width: 399px) {
+  .title {
+    font-size: 1.3rem;
+  }
+
+  .grid-container {
+    margin-bottom: 25%;
+
+    &__cover {
+      margin: 0 0 14% 10%;
+      background-size: cover;
+      height: 70px;
+      width: 80%;
+    }
+
+    &__avatar {
+      width: 76px;
+      height: 76px;
+      margin-top: 8%;
+      margin-left: 30%;
+    }
+
+    &__avatar-not-found {
+      width: 76px;
+      height: 76px;
+      margin-top: 8%;
+      margin-left: 30%;
+    }
+
+    &__bio {
+      padding: 0 5px 0 5px;
+      font-size: 12px;
+    }
+
+    &__btn {
+      margin-left: 37.5%;
+      padding: 4px 10px 4px 10px;
+      font-size: 10px;
+      width: 23%;
+    }
+
+    &__profile-info {
+      margin-bottom: 2.5rem;
+    }
+
+    &__username {
+      font-size: 1rem;
+    }
+
+    &__loading {
+      text-align: center;
+      margin-top: 30%;
+      font-size: 1.2rem;
+    }
+  }
+}

@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+$btn-background-color: #ffffff;
+$btn-font-color: #4887c2;
+
+.mainDiv {
+  width: 70vw;
+  margin: 3rem auto;
+}
+.input {
+  border: none;
+  font-size: 16px;
+  padding: 5px;
+  height: 50px;
+  margin-bottom: 3px;
+  width: 99%;
+  &:focus {
+    outline: solid $btn-font-color;
+    outline-width: thin;
+  }
+  &__body {
+    height: 100%;
+  }
+}
+
+div .ck-editor__editable {
+  min-height: 250px;
+}
+
+div .ck-editor__editable {
+  min-height: 250px;
+}
+.ck-content .image {
+  max-width: 50%;
+  height: 10% !important;
+  &:focus {
+    figcaption {
+      display: inline;
+      height: 80% !important;
+    }
+  }
+  .ck-placeholder {
+    display: none;
+    height: 80% !important;
+  }
+}
+
+.btn {
+  border-radius: 20px;
+  &:focus {
+    outline: none;
+  }
+  &__create {
+    margin-top: 1em;
+    margin-left: 89%;
+    height: 2em;
+    width: 6em;
+    font-size: 18px;
+    background-color: $btn-background-color;
+    color: $btn-font-color;
+    border-color: $btn-font-color;
+    margin-bottom: 2em;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .mainDiv {
+    margin: 0.5rem auto;
+  }
+}
+@media screen and (max-width: 576px) {
+  .btn {
+    &__create {
+      margin-left: 30%;
+      margin-top: 1.5em;
+    }
+  }
+  div .ck-editor__editable {
+    min-height: 150px;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .btn {
+    &__create {
+      margin-left: 70%;
+    }
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .btn {
+    &__create {
+      margin-left: 81%;
+    }
+  }
+}
+@media (min-width: 1025px) {
+  .btn {
+    &__create {
+      margin-left: 88%;
+    }
+  }
+}

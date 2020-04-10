@@ -1,0 +1,60 @@
+$font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+$box-border: thin rgb(250, 250, 250) solid;
+$box-shadow: 0px 0px 1px 1px rgb(218, 218, 218);
+
+.user-articles-thread {
+    font-family: $font-family;
+    margin: 0 15% 0 15%;
+    min-width: 600px;
+}
+.user-articles-thread__div {
+    display: flex;
+    border: $box-border;
+    margin-bottom: 15px;
+    &:hover {
+        box-shadow: $box-shadow;
+        cursor: pointer;
+    }
+    &__img {
+        margin: 5px;
+        width: 20%;
+        height: 120px;
+        float: left;
+        &__default {
+            width: 100%;
+            height: 100%;
+        }
+    
+    }
+    &__content {
+        width: 100%;
+        height: 120px;
+        float: right;
+        margin: 5px;
+        margin-bottom: 0px;
+        &__title {
+            margin: 2px;
+            margin-bottom: 20px;
+            font-weight: bolder;
+        }
+        &__desc {
+            font-size: 0.9em;
+        }
+        &__btn {
+            padding-top: 25px;
+            font-size: 0.9em;
+            margin-bottom: 0px;
+            &__like {
+                margin-right: 20px;
+            }
+        }
+    }
+
+}
+.fa {
+    margin-left: 5px;
+}
+.no-articles {
+    text-align: center;
+    padding-top: 10px;
+}

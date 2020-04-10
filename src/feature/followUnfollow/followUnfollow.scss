@@ -1,0 +1,73 @@
+.Follow{
+    &__button button{
+        border: 1px solid #4887C2;
+        color: #4887C2;
+        font-size: 12px;
+        border-radius: 5px;
+        position: absolute;
+        width: 74px;
+        height: 20px;
+        margin: 2.5em;
+        top: 115px;
+        align-items: center;
+        text-align: center;
+        cursor: pointer;
+    }
+}
+
+
+@media (min-width: 411px) and (max-width: 767px) {
+    .Follow{
+        &__button button{
+            position: absolute;
+            left: 180px;
+            font-size: 9px;
+            width: 57px;
+            height: 16px;
+            margin-top: -1.2em;
+            margin-left: 2em;
+            background: white;
+        }
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .Follow{
+        &__button button{
+            margin-left: 4em;
+            font-size: 10px;
+            width: 60px;
+            height: 18px;
+            background: white;
+        }
+    }
+  }
+  @media (min-width: 1025px) 
+  {
+    .Follow{
+        &__button button{
+            position: absolute;
+            margin-left: -2em;
+            font-size: 10px;
+            width: 60px;
+            height: 18px;
+            background: white;
+        }
+    }
+  }
+  
+  @media (min-width: 320px) and (max-width: 410px) {
+    .Follow{
+        &__button button{
+            margin-top: -1.2em;
+            margin-left: 6em;
+            font-size: 7px;
+            width: 45px;
+            height: 12px;
+            border-radius: 3px;
+            text-align: center;
+            align-items: center;
+            background: white;
+        }
+    }
+  }

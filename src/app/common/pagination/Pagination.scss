@@ -1,0 +1,44 @@
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  .pagination {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    li {
+      display: inline-block;
+      text-align: center;
+      margin: 2px 5px;
+
+      a {
+        cursor: pointer;
+        color: black;
+        background: white;
+        font-weight: bold;
+        box-shadow: 1px 3px lightgray;
+        padding: 8px 15px;
+        width: 30px;
+        height: 30px;
+        text-decoration: none;
+      }
+    }
+
+    .active {
+      background: #2b9ff2;
+      a {
+        cursor: pointer;
+        color: white;
+        background: #2b9ff2;
+        font-weight: bold;
+        box-shadow: 1px 3px lightgray;
+        padding: 8px 15px;
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+}
